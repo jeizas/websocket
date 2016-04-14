@@ -1,0 +1,9 @@
+.metadata/
+.classpath
+.project
+.settings
+.idea
+target/*
+webapp/WEB-INF/classes/*
+webapp/WEB-INF/lib/*
+webapp/META-INF/*
