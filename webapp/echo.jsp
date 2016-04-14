@@ -1,8 +1,7 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-    <title>ZHDM</title>
+    <title>websocket</title>
     <style type="text/css">
         #connect-container {
             float: left;
@@ -85,11 +84,8 @@
             if (ws != null) {
                 var message = document.getElementById('message').value;
                 log('Sent: ' + message);
-                var msg = '"frdId":"'+28+'",'
-				+ '"content":"'
-				+ message + '"';
-		ws.send(msg);
-               // ws.send(message);
+                var msg = '"frdId":"'+28+'",'+ '"content":"'+ message + '"';
+				ws.send(msg);
             } else {
                 alert('connection not established, please connect.');
             }

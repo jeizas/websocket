@@ -11,7 +11,7 @@
 	http://www.springframework.org/schema/websocket http://www.springframework.org/schema/websocket/spring-websocket.xsd">
 
 	<!-- 注解扫描包 -->
-	<context:component-scan base-package="com.jeizas.controller" />
+	<context:component-scan base-package="com.jeizas" />
 
 	<!-- 开启注解 -->
 	<mvc:annotation-driven />
@@ -67,12 +67,12 @@
 	</bean>
 	
 <!-- spring-websocket配置start-->
-    <bean id="websocket" class="com.jeizas.controller.WebsocketEndPoint" />
-    <websocket:handlers>
-        <websocket:mapping path="/websocket" handler="websocket" />
-        <websocket:handshake-interceptors>
-            <bean class="com.jeizas.controller.HandshakeInterceptor" />
-        </websocket:handshake-interceptors>
-    </websocket:handlers>
+<!--     <bean id="websocket" class="com.jeizas.controller.WebsocketEndPoint" /> -->
+<!--     <websocket:handlers> -->
+<!--         <websocket:mapping path="/websocket" handler="websocket" /> -->
+<!--         <websocket:handshake-interceptors> -->
+<!--             <bean class="com.jeizas.controller.HandshakeInterceptor" /> -->
+<!--         </websocket:handshake-interceptors> -->
+<!--     </websocket:handlers> -->
     <!-- spring-websocket配置end-->
 </beans>
